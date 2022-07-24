@@ -28,9 +28,11 @@
 
 ### **_Getting Started_**
 
-##### Below is the Component Heirarchy
+##### Below are the Component Heirarchy and ERD:
 
 ![Bond component heirarchy](./assets/bond.png)
+
+![Bond ERD](./assets/bondERD.png)
 
 ##### A Trello board was used to keep track of development progress and can be viewed here:
 
