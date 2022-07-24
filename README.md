@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-#### I am creating a site where Bond enthusiasts and novices can learn about all things Bond. The user will be able to navigate all six bonds, their movies and the villians they faced.
+#### I am creating a site where Bond enthusiasts and novices can learn about all things Bond. The user will be able to navigate all six bonds, their movies and the villians they faced. In addition, users can create a new villain for Bond to face. Muhahaha!
 
 ---
 
