@@ -30,7 +30,7 @@
 
 ##### Below is the Component Heirarchy
 
-![Bond component heirarchy] (./assets/bond.png)
+![Bond component heirarchy](./assets/bond.png)
 
 ##### A Trello board was used to keep track of development progress and can be viewed here:
 
