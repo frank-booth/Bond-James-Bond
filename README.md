@@ -28,9 +28,11 @@
 
 ### **_Getting Started_**
 
-##### Below are the Component Heirarchy and ERD:
+##### Component Heirarchy:
 
 ![Bond component heirarchy](./assets/bond.png)
+
+##### ERD:
 
 ![Bond ERD](./assets/bondERD.png)
 
