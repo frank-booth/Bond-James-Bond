@@ -34,7 +34,7 @@
 
 ![Bond ERD](./assets/bondERD.png)
 
-##### A Trello board was used to keep track of development progress and can be viewed here:
+##### A Trello board was used to keep track of development progress and can be viewed here: [Trello](https://trello.com/b/etdhFArk/bond-project-2).
 
 ---
 
