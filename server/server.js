@@ -5,6 +5,7 @@ const logger = require('morgan')
 const PORT = process.env.PORT || 3001
 const db = require('./db')
 const { Bond, Movie, Villain } = require('./models')
+const villainController = require('./controllers/VillainController.js')
 
 const app = express()
 
@@ -64,6 +65,40 @@ app.get('/villains/:id', async (req, res) => {
   } catch (e) {
     console.log(e)
     res.send('Villain not found!')
+  }
+})
+
+app.post('/villains', async (req, res) => {
+  try {
+    const newVillain = await new Villain(req.body)
+    await newVillain.save()
+    res.send(newVillain)
+  } catch (error) {
+    throw error
+  }
+})
+
+app.put('/villains/:id', async (req, res) => {
+  try {
+    const villain = await Villain.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.status(200).json(villain)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+})
+
+app.delete('/villains/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Villain.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send(`Villain with ID ${id} deleted`)
+    }
+    throw new Error('Villain not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
   }
 })
 
