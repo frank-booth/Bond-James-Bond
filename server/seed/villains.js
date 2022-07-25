@@ -1,5 +1,5 @@
 const db = require('../db')
-const Villain = require('../models/villain')
+const { Villain, Bond } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -55,7 +55,7 @@ const main = async () => {
       bond: danielCraig[0]._id
     },
     {
-      name: 'Dominic greene',
+      name: 'Dominic Greene',
       movies: 'Quantum of Solace',
       description:
         "In a streamlined, fully-envisioned film, Mathieu Amalric could have played a great Bond villain. Instead, he's pretty good, lending some fairly entertaining sleaze to a thinly sketched megalomaniac whose evil scheme is as uninspiring as the rest of Quantum of Solace.",

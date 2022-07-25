@@ -12,4 +12,4 @@ const Villain = new Schema(
   { timestamps: true }
 )
 
-module.exports = mongoose.model('villains', Villain)
+module.exports = Villain

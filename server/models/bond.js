@@ -11,4 +11,4 @@ const Bond = new Schema(
   { timestamps: true }
 )
 
-module.exports = mongoose.model('bonds', Bond)
+module.exports = Bond
