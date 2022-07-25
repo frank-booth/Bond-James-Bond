@@ -6,7 +6,7 @@ const Movie = new Schema(
     name: { type: String, required: true },
     year_released: { type: String, required: true },
     poster: { type: String, required: true },
-    bond_Id: { type: Schema.Types.ObjectId, ref: 'Bond' }
+    bond: { type: Schema.Types.ObjectId, ref: 'Bond' }
   },
   { timestamps: true }
 )
