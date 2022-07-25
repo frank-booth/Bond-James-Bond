@@ -7,7 +7,7 @@ const Villain = new Schema(
     movies: { type: String, required: true },
     description: { type: String, required: true },
     image: { type: String, required: true },
-    bond: { type: Schema.Types.ObjectId, ref: 'Bond' }
+    bond: { type: String, required: true }
   },
   { timestamps: true }
 )

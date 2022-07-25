@@ -12,6 +12,6 @@ router.get('./movies/:id', movieController.getMovieById)
 
 router.get('/villains', villainController.getAllVillains)
 router.get('./villains/:id', villainController.getVillainById)
-router.post('./villains/', villainController.createNewVillain)
+router.post('./villains', villainController.createVillain)
 router.put('./villains/:id', villainController.updateVillain)
 router.delete('./villains/:id', villainController.deleteVillain)

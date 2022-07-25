@@ -20,9 +20,10 @@ const getVillainById = async (req, res) => {
   }
 }
 
-const createNewVillain = async (req, res) => {
+const createVillain = async (req, res) => {
   try {
-    const newVillain = await newVillain(req.body)
+    const newVillain = await new Villain(req.body)
+    await newVillain.save()
     res.send(newVillain)
   } catch (error) {
     throw error
@@ -55,7 +56,7 @@ const deleteVillain = async (req, res) => {
 module.exports = {
   getAllVillains,
   getVillainById,
-  createNewVillain,
+  createVillain,
   updateVillain,
   deleteVillain
 }
