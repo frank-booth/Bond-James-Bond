@@ -1,4 +1,5 @@
 const express = require('express')
+const routes = require('./routes')
 const cors = require('cors')
 const logger = require('morgan')
 const PORT = process.env.PORT || 3001
@@ -48,6 +49,25 @@ app.get('/movies/:id', async (req, res) => {
     res.send('Movie not found!')
   }
 })
+
+app.get('/villains', async (req, res) => {
+  const villains = await Villain.find({})
+  res.json(villains)
+})
+
+app.get('/villains/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const villain = await Villain.findById(id)
+    if (!villain) throw Error('Villain not found')
+    res.json(villain)
+  } catch (e) {
+    console.log(e)
+    res.send('Villain not found!')
+  }
+})
+
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
