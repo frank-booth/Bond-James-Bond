@@ -1,6 +1,6 @@
 const { Bond } = require('../models')
 
-const getAllBonds = async () => {
+const getAllBonds = async (req, res) => {
   try {
     const bonds = await Bond.find({})
     if (bonds.length > 0) {

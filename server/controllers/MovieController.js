@@ -1,6 +1,6 @@
 const { Movie } = require('../models')
 
-const getAllMovies = async () => {
+const getAllMovies = async (req, res) => {
   try {
     const movies = await Movie.find({})
     if (movies.length > 0) {
