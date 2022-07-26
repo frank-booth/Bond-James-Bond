@@ -18,7 +18,7 @@ const Bonds = () => {
       <div>
         {bonds.map((bond) => (
           <div key={bond.name}>
-            <h1> {bond.name}</h1>
+            <h1> {bonds != null ? bond.name : ''}</h1>
           </div>
         ))}
       </div>
