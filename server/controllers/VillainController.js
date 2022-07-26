@@ -1,6 +1,6 @@
 const { Villain } = require('../models')
 
-const getAllVillains = async () => {
+const getAllVillains = async (req, res) => {
   try {
     const villains = await Villain.find({})
     if (villains.length > 0) {
