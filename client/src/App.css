@@ -1,5 +1,33 @@
 .App {
   text-align: center;
+
+  
 }
 
 
+
+
+
+ .bondBox {
+  display:flex;
+  flex-direction: row;
+  gap: 30px
+  
+ 
+}
+
+ .bondCard {
+  background-color: rgba(0,0,0,.5) ;
+	width: 90%;
+	margin: 20px auto ;
+	border-radius: 10px;
+
+}
+
+.imageBox {
+  height:190px;
+  width: 250px;
+  border-radius: 20%;
+  margin-bottom:30px
+  
+}

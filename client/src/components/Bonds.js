@@ -12,13 +12,14 @@ const Bonds = () => {
     }
     getBonds()
   }, [])
+
   return (
     <div>
-      <h1>Bonds Page</h1>
-      <div>
+      <div className="bondBox">
         {bonds.map((bond) => (
-          <div key={bond.name}>
+          <div className="bondCard" key={bond.name}>
             <h1> {bonds != null ? bond.name : ''}</h1>
+            <img className="imageBox" src={bond.image} />
           </div>
         ))}
       </div>
