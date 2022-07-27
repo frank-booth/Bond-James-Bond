@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 const Villains = () => {
@@ -13,6 +14,11 @@ const Villains = () => {
     getVillains()
   }, [])
 
+  const deleteVillain = async (id) => {
+    const res = await axios.delete(`http://localhost:3001/villains/${id}`)
+    console.log('villain deleted')
+  }
+
   return (
     <div>
       <div className="villainBox">
@@ -20,6 +26,8 @@ const Villains = () => {
           <div className="villainCard" key={villain.name}>
             <h1> {villains != null ? villain.name : ''}</h1>
             <img className="imageBox" src={villain.image} />
+            <button onClick={() => deleteVillain(villain._id)}>Delete</button>
+            <button>Update</button>
           </div>
         ))}
       </div>
