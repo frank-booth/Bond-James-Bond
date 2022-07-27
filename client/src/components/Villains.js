@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 const Villains = () => {
@@ -26,7 +25,7 @@ const Villains = () => {
           <div className="villainCard" key={villain.name}>
             <h1> {villains != null ? villain.name : ''}</h1>
             <img className="imageBox" src={villain.image} />
-            <button onClick={() => deleteVillain(villain._id)}>Delete</button>
+            <button onClick={() => deleteVillain(villain._id)}>Kill</button>
             <button>Update</button>
           </div>
         ))}
