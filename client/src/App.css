@@ -4,11 +4,21 @@
   
 }
 
+/*.page-container {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+.bondGif {
+margin-top: 150px;
+border-radius: 100%
+}*/
 
+.homeButtons {
+  margin-right: 20px
+}
 
-
-
- .bondBox {
+ .bondBox, .villainBox {
   display: grid;
  grid-template-columns: repeat(3, 1fr);
   gap: 30px

@@ -8,7 +8,7 @@ const Bonds = () => {
     const getBonds = async () => {
       const res = await axios.get('http://localhost:3001/bonds')
       setBonds(res.data)
-      console.log(bonds)
+      console.log(res.data)
     }
     getBonds()
   }, [])

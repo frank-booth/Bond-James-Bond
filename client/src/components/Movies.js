@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react'
+import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
+import MovieCard from './MovieCard'
 
-const Movies = () => {
+const Movies = (props) => {
   const [movies, setMovies] = useState([])
+  let navigate = useNavigate()
 
   useEffect(() => {
     const getMovies = async () => {
       const res = await axios.get('http://localhost:3001/movies')
       setMovies(res.data)
-      console.log(movies)
+      console.log(res.data)
     }
     getMovies()
   }, [])

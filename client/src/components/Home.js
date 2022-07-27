@@ -5,8 +5,18 @@ const Home = () => {
     <div className="homepage">
       <h1>James Bond</h1>
       <div>
-        <Link to="/bonds">Bonds</Link>
-        <Link to="/movies">Movies</Link>
+        <button className="homeButtons">
+          <Link to="/bonds">Bonds</Link>
+        </button>
+        <button className="homeButtons">
+          <Link to="/movies">Movies</Link>
+        </button>
+        <button className="homeButtons">
+          <Link to="/villains">Villains</Link>
+        </button>
+        <button className="homeButtons">
+          <Link to="new">Add a Villain</Link>
+        </button>
       </div>
     </div>
   )
