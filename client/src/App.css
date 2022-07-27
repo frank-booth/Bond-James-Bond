@@ -12,8 +12,6 @@
   display: grid;
  grid-template-columns: repeat(3, 1fr);
   gap: 30px
-  
- 
 }
 
  .bondCard {
@@ -31,4 +29,15 @@
   border-radius: 20%;
   margin-bottom:30px
   
+}
+
+.movieBox {
+  display: grid;
+ grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 30px
+}
+.posterBox {
+  height: 250px;
+  width:200px
 }

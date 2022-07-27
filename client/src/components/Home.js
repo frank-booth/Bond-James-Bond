@@ -6,6 +6,7 @@ const Home = () => {
       <h1>James Bond</h1>
       <div>
         <Link to="/bonds">Bonds</Link>
+        <Link to="/movies">Movies</Link>
       </div>
     </div>
   )
