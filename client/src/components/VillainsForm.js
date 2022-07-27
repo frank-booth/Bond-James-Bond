@@ -16,9 +16,10 @@ const VillainsForm = () => {
     setFormState({ ...formState, [event.target.id]: event.target.value })
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    console.log(formState)
+    let res = await axios.post('http://localhost:3001/villains', formState)
+    console.log(res)
     setFormState(initialState)
   }
 
@@ -26,28 +27,46 @@ const VillainsForm = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Villain Name:</label>
-        <input id="name" type="text" onChange={handleChange} />
+        <input
+          id="name"
+          type="text"
+          onChange={handleChange}
+          value={formState.name}
+        />
         <label htmlFor="movies">Movies:</label>
-        <input id="movies" type="text" onChange={handleChange} />
+        <input
+          id="movies"
+          type="text"
+          onChange={handleChange}
+          value={formState.movies}
+        />
         <label htmlFor="description">Description:</label>
         <textarea
           id="description"
           cols="30"
           rows="10"
+          value={formState.description}
           onChange={handleChange}
         ></textarea>
-        <label htmlFor="image">Subject:</label>
-        <input type="text" id="image" onChange={handleChange} />
+        <label htmlFor="image">Image Url:</label>
+        <input
+          type="text"
+          id="image"
+          onChange={handleChange}
+          value={formState.image}
+        />
         <label htmlFor="">Choose a Bond:</label>
-        <select id="bond" onChange={handleChange}>
-          <option value="bond">Sean Connery</option>
-          <option value="bond">George Lazenby</option>
-          <option value="bond">Roger Moore</option>
-          <option value="bond">Timothy Dalton</option>
-          <option value="bond">Pierce Brosnan</option>
-          <option value="bond">Daniel Craig</option>
+        <select id="bond" onChange={handleChange} value={formState.bond}>
+          <option value="Sean Connery">Sean Connery</option>
+          <option value="George Lazenby">George Lazenby</option>
+          <option value="Roger Moore">Roger Moore</option>
+          <option value="Timothy Dalton">Timothy Dalton</option>
+          <option value="Pierce Brosnan">Pierce Brosnan</option>
+          <option value="Daniel Craig">Daniel Craig</option>
         </select>
-        <button type="submit">Submit</button>
+        <button className="formButton" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   )
