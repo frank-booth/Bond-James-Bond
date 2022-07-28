@@ -15,7 +15,7 @@ const Home = () => {
           <Link to="/villains">Villains</Link>
         </button>
         <button className="homeButtons">
-          <Link to="new">Add a Villain</Link>
+          <Link to="add">Add a Villain</Link>
         </button>
       </div>
     </div>

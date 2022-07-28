@@ -28,7 +28,7 @@ const Villains = () => {
   }
 
   const updateVillain = (villainId) => {
-    navigate('./new2', { state: { id: villainId } })
+    navigate('./update', { state: { id: villainId } })
   }
 
   return (
@@ -46,7 +46,7 @@ const Villains = () => {
             >
               Kill
             </button>
-            <button onClick={() => updateVillain(villain._id)}>Update</button>
+            <button onClick={() => updateVillain(villain)}>Update</button>
           </div>
         ))}
       </div>

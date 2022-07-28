@@ -22,8 +22,8 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieCard />} />
           <Route path="/villains" element={<Villains />} />
-          <Route path="new" element={<VillainsForm />} />
-          <Route path="/villains/new2" element={<VillainUpdate />} />
+          <Route path="add" element={<VillainsForm />} />
+          <Route path="/villains/update" element={<VillainUpdate />} />
         </Routes>
       </main>
     </div>
