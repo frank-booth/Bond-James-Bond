@@ -8,6 +8,7 @@ import Movies from './components/Movies'
 import Villains from './components/Villains'
 import MovieCard from './components/MovieCard'
 import VillainsForm from './components/VillainsForm'
+import VillainUpdate from './components/VillainUpdate'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/movies/:id" element={<MovieCard />} />
           <Route path="/villains" element={<Villains />} />
           <Route path="new" element={<VillainsForm />} />
+          <Route path="/villains/new2" element={<VillainUpdate />} />
         </Routes>
       </main>
     </div>

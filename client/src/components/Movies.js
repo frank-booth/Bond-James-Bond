@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import MovieCard from './MovieCard'
 
@@ -16,12 +16,21 @@ const Movies = (props) => {
     getMovies()
   }, [])
 
+  const showMovie = (movie) => {
+    navigate(`${movie._id}`)
+  }
+
   return (
     <div>
       <div className="movieBox">
         {movies.map((movie) => (
-          <div className="movieCard" key={movie.name}>
+          <div
+            className="movieCard"
+            onClick={() => showMovie(movie)}
+            key={movie.name}
+          >
             <img className="posterBox" src={movie.poster} />
+            <MovieCard movies={movies} />
           </div>
         ))}
       </div>

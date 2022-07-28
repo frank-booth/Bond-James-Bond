@@ -9,13 +9,22 @@ const MovieCard = (props) => {
     let selectedMovie = props.movies.find((movie) => movie.id === parseInt(id))
     setMovie(selectedMovie)
   }, [props.movies, id])
+  console.log(movie)
+  // useEffect(() => {
+  //   const getMovie = async () => {
+  //     const res = await axios.get(`http://localhost:3001/movies/${id}`)
 
-  return movie ? (
+  //     setMovies(res.data)
+  //   }
+  //   getMovie()
+  // }, [id])
+
+  return (
     <div>
-      <h2>{movie.name}</h2>
-      <img src={movie.poster} />
+      <h2>{movie != null ? movie.name : ''}</h2>
+      <img src={movie != null ? movie.poster : ''} />
     </div>
-  ) : null
+  )
 }
 
 export default MovieCard
