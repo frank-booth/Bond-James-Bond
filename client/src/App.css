@@ -5,7 +5,7 @@
 }
 
 .navPage {
-  display: fblock;
+  display: block;
   justify-content: center;
   background-color:black;
   height: 50px
@@ -160,6 +160,12 @@ form input {
   padding: .50em;
   
 }
+
+.labels {
+  text-align: left;
+   padding: 5px;
+  font-weight: bolder}
+
 
 .formButton {
 margin-top: 20px
