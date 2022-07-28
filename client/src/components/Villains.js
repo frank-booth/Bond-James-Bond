@@ -38,15 +38,28 @@ const Villains = () => {
           <div className="villainCard" key={villain.name}>
             <h1> {villains != null ? villain.name : ''}</h1>
             <img className="imageBox" src={villain.image} />
-            <button
-              onClick={() => {
-                deleteVillain(villain._id)
-                refreshVillains(villains.indexOf(villain))
-              }}
-            >
-              Kill
-            </button>
-            <button onClick={() => updateVillain(villain)}>Update</button>
+            <h2>{villain.movies}</h2>
+            <div className="descriptionBox">
+              <p>{villain.description}</p>
+            </div>
+            <div className="villainButtonContainer">
+              <button
+                className="villainButton"
+                id="deleteButton"
+                onClick={() => {
+                  deleteVillain(villain._id)
+                  refreshVillains(villains.indexOf(villain))
+                }}
+              >
+                Kill
+              </button>
+              <button
+                className="villainButton"
+                onClick={() => updateVillain(villain)}
+              >
+                Update
+              </button>
+            </div>
           </div>
         ))}
       </div>

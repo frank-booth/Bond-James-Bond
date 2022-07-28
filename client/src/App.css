@@ -31,13 +31,14 @@ border-radius: 100%
 	border-radius: 20px;
   color:white;
 
+
 }
 
 .imageBox {
   height:190px;
   width: 250px;
   border-radius: 20%;
-  margin-bottom:30px
+  
   
 }
 
@@ -51,6 +52,60 @@ border-radius: 100%
   height: 250px;
   width:200px
 }
+
+ .villainBox {
+  display: grid;
+ grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  
+}
+
+ .villainCard {
+  background-color: rgba(0,0,0,.5) ;
+	width: 90%;
+	margin: 20px auto ;
+  border: 10px solid black;
+	border-radius: 20px;
+  color:white;
+
+
+}
+
+.descriptionBox {
+  background-color:rgb(50, 48, 48);
+  border-radius: 20%;
+  margin: 0 10px 0 10px;
+  box-shadow: 5px 10px black
+}
+p {
+  padding: 20px
+}
+
+.villainButtonContainer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+}
+
+.villainButton {
+  background-color: black;
+  width: 75px;
+  padding: 5px;
+  color:white;
+  font-size: 14px;
+  font-weight:bolder
+}
+
+  #deleteButton {
+    color: white;
+    background-color:#840809
+
+  }
+
 
 form {
   background-color: black;

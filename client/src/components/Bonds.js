@@ -18,8 +18,11 @@ const Bonds = () => {
       <div className="bondBox">
         {bonds.map((bond) => (
           <div className="bondCard" key={bond.name}>
-            <h1> {bonds != null ? bond.name : ''}</h1>
+            <h2> {bonds != null ? bond.name : ''}</h2>
+            <h3> {bond.years}</h3>
             <img className="imageBox" src={bond.image} />
+
+            <h3>Movie Count: {bond.movie_count}</h3>
           </div>
         ))}
       </div>
