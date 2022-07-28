@@ -4,15 +4,15 @@
   
 }
 
-/*.page-container {
-  display: flex;
+.homepage {
+  display: fblock;
   justify-content: center;
-  height: 600px;
+
 }
 .bondGif {
 margin-top: 150px;
 border-radius: 100%
-}*/
+}
 
 .homeButtons {
   margin-right: 20px;
