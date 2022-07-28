@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const VillainsForm = () => {
+  let navigate = useNavigate()
   const initialState = {
     name: '',
     movies: '',
@@ -21,53 +23,62 @@ const VillainsForm = () => {
     let res = await axios.post('http://localhost:3001/villains', formState)
     console.log(res)
     setFormState(initialState)
+    navigate(-1)
   }
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Villain Name:</label>
-        <input
-          id="name"
-          type="text"
-          onChange={handleChange}
-          value={formState.name}
-        />
-        <label htmlFor="movies">Movies:</label>
-        <input
-          id="movies"
-          type="text"
-          onChange={handleChange}
-          value={formState.movies}
-        />
-        <label htmlFor="description">Description:</label>
-        <textarea
-          id="description"
-          cols="30"
-          rows="10"
-          value={formState.description}
-          onChange={handleChange}
-        ></textarea>
-        <label htmlFor="image">Image Url:</label>
-        <input
-          type="text"
-          id="image"
-          onChange={handleChange}
-          value={formState.image}
-        />
-        <label htmlFor="">Choose a Bond:</label>
-        <select id="bond" onChange={handleChange} value={formState.bond}>
-          <option value="Sean Connery">Sean Connery</option>
-          <option value="George Lazenby">George Lazenby</option>
-          <option value="Roger Moore">Roger Moore</option>
-          <option value="Timothy Dalton">Timothy Dalton</option>
-          <option value="Pierce Brosnan">Pierce Brosnan</option>
-          <option value="Daniel Craig">Daniel Craig</option>
-        </select>
-        <button className="formButton" type="submit">
-          Submit
-        </button>
-      </form>
+      <div className="formContainer">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">Villain Name:</label>
+          <input
+            id="name"
+            type="text"
+            onChange={handleChange}
+            value={formState.name}
+          />
+          <label htmlFor="movies">Movies:</label>
+          <input
+            id="movies"
+            type="text"
+            onChange={handleChange}
+            value={formState.movies}
+          />
+          <label htmlFor="description" style={{ padding: '5px' }}>
+            Description:
+          </label>
+          <textarea
+            id="description"
+            cols="30"
+            rows="10"
+            value={formState.description}
+            onChange={handleChange}
+          ></textarea>
+          <label htmlFor="image">Image Url:</label>
+          <input
+            type="text"
+            id="image"
+            onChange={handleChange}
+            value={formState.image}
+          />
+          <label htmlFor="">Choose a Bond:</label>
+          <select id="bond" onChange={handleChange} value={formState.bond}>
+            <option value="Sean Connery">Sean Connery</option>
+            <option value="George Lazenby">George Lazenby</option>
+            <option value="Roger Moore">Roger Moore</option>
+            <option value="Timothy Dalton">Timothy Dalton</option>
+            <option value="Pierce Brosnan">Pierce Brosnan</option>
+            <option value="Daniel Craig">Daniel Craig</option>
+          </select>
+          <button
+            className="formButton"
+            style={{ width: '100px', fontSize: '18px', fontWeight: 'bolder' }}
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   )
 }

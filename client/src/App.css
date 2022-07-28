@@ -4,13 +4,20 @@
   
 }
 
-.homepage {
+.navPage {
   display: fblock;
   justify-content: center;
+  background-color:black;
+  height: 50px
 
 }
+.navButtons {
+  display: flex;
+  justify-content: right;
+  padding-top: 30px
+}
 .bondGif {
-margin-top: 150px;
+margin-top: 250px;
 border-radius: 100%
 }
 
@@ -25,7 +32,8 @@ border-radius: 100%
  .bondBox, .villainBox {
   display: grid;
  grid-template-columns: repeat(3, 1fr);
-  gap: 30px
+  gap: 30px;
+  margin-top: 50px
 }
 
  .bondCard {
@@ -34,6 +42,7 @@ border-radius: 100%
 	margin: 20px auto ;
 	border-radius: 20px;
   color:white;
+  border: 10px solid black;
 
 
 }
@@ -49,12 +58,30 @@ border-radius: 100%
 .movieBox {
   display: grid;
  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 50px;
   margin-top: 30px
+
+
 }
+
+.movieCard {
+  background-color: rgba(0,0,0,.5) ;
+	width: 90%;
+	margin: 20px auto ;
+	border-radius: 20px;
+  color:white;
+  border: 10px solid black;
+  padding: 15px;
+
+
+}
+
+
 .posterBox {
   height: 250px;
-  width:200px
+  width:200px;
+ 
+
 }
 
  .villainBox {
@@ -110,9 +137,11 @@ p {
 
   }
 
-
+.formContainer {
+ margin-top: 200px
+}
 form {
-  background-color: black;
+  background-image: url(https://www.maxpixel.net/static/photo/1x/Gradation-Blue-Background-Geomatri-Form-4876988.jpg);
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -122,12 +151,14 @@ form {
   min-height: 10em;
   margin: 2em auto;
   border-radius: 0.25em;
-  color:white
+  color:white;
+  border-radius: 10%
 }
 
 form input {
   display:block;
-  padding: 0.50em;
+  padding: .50em;
+  
 }
 
 .formButton {

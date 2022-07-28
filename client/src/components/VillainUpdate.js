@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const VillainUpdate = () => {
   // I used this as a reference to get the id over: https://stackoverflow.com/questions/72017435/how-can-i-pass-parameters-to-route-with-navigate-function-in-react
   let location = useLocation()
+  let navigate = useNavigate()
+
   const initialState = {
-    name: `${location.state.id.name}`,
-    movies: `${location.state.id.movies}`,
-    description: `${location.state.id.description}`,
-    image: `${location.state.id.image}`,
-    bond: `${location.state.id.bond}`
+    name: `${location.state.villain.name}`,
+    movies: `${location.state.villain.movies}`,
+    description: `${location.state.villain.description}`,
+    image: `${location.state.villain.image}`,
+    bond: `${location.state.villain.bond}`
   }
 
   const [formState, setFormState] = useState(initialState)
@@ -22,11 +24,12 @@ const VillainUpdate = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     let res = await axios.put(
-      `http://localhost:3001/villains/${location.state.id._id}`,
+      `http://localhost:3001/villains/${location.state.villain._id}`,
       formState
     )
     console.log(res)
     setFormState(initialState)
+    navigate(-1)
   }
 
   return (

@@ -2,9 +2,8 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-    <div className="homepage">
-      <h1>James Bond</h1>
-      <div>
+    <div className="navPage">
+      <div className="navButtons">
         <button className="homeButtons">
           <Link
             style={{ color: 'black', fontWeight: 'bold', fontSize: '18px' }}

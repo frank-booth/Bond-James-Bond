@@ -27,8 +27,8 @@ const Villains = () => {
     setVillains(temp)
   }
 
-  const updateVillain = (villainId) => {
-    navigate('./update', { state: { id: villainId } })
+  const updateVillain = (villain) => {
+    navigate('./update', { state: { villain: villain } })
   }
 
   return (

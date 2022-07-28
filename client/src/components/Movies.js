@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import MovieCard from './MovieCard'
 
 const Movies = (props) => {
   const [movies, setMovies] = useState([])
@@ -24,13 +23,9 @@ const Movies = (props) => {
     <div>
       <div className="movieBox">
         {movies.map((movie) => (
-          <div
-            className="movieCard"
-            onClick={() => showMovie(movie)}
-            key={movie.name}
-          >
+          <div className="movieCard">
             <img className="posterBox" src={movie.poster} />
-            <MovieCard movies={movies} />
+            <h2>{movie.year_released}</h2>
           </div>
         ))}
       </div>
