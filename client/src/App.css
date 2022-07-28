@@ -15,7 +15,11 @@ border-radius: 100%
 }*/
 
 .homeButtons {
-  margin-right: 20px
+  margin-right: 20px;
+  background-color: darkgray;
+  box-shadow: 5px 10px black
+
+
 }
 
  .bondBox, .villainBox {

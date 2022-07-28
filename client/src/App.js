@@ -2,6 +2,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Nav from './components/Nav'
 import Home from './components/Home'
 import Bonds from './components/Bonds'
 import Movies from './components/Movies'
@@ -14,10 +15,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Home />
+        <Nav />
       </header>
       <main className="page-container">
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/bonds" element={<Bonds />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieCard />} />
