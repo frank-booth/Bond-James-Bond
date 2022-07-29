@@ -78,11 +78,7 @@ const VillainsForm = () => {
             <option value="Pierce Brosnan">Pierce Brosnan</option>
             <option value="Daniel Craig">Daniel Craig</option>
           </select>
-          <button
-            className="formButton"
-            style={{ width: '100px', fontSize: '18px', fontWeight: 'bolder' }}
-            type="submit"
-          >
+          <button className="formButton" type="submit">
             Submit
           </button>
         </form>

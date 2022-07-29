@@ -148,7 +148,7 @@ p {
   }
 
 .formContainer {
- margin-top: 165px;
+ margin-top: 130px;
 }
 form {
   background-image: url(https://media.istockphoto.com/photos/background-picture-id465101247?k=20&m=465101247&s=612x612&w=0&h=dHPuBSWDrWI2j9zsiFytVFSVVzVZxAK5p9hdjt8QS_k=);
@@ -174,12 +174,29 @@ form input {
 
 .labels {
   text-align: left;
-   padding: 5px;
+  padding: 5px;
   font-weight: bolder;
-font-size:18px}
+  font-size:18px
+}
+
+#bond {
+  font-size:18px;
+  padding:5px
+}
+
+textarea {
+  font-size:18px;
+}
 
 
 .formButton {
 margin: 10px 0 20px 10px;
-border-radius: 15%
+border-radius: 15%;
+padding:5px;
+background-color:black;
+border: 3px solid white;
+color:red;
+width: 100px;
+font-size: 18px;
+font-weight: bolder;
 }
