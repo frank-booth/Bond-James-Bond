@@ -23,6 +23,20 @@ const main = async () => {
       bond: seanConnery[0]._id
     },
     {
+      name: 'Goldfinger',
+      year_released: '1964',
+      poster:
+        'https://resizing.flixster.com/00SmgIKZRSHAu9aWZYQBrDFqSBo=/206x305/v2/https://flxt.tmsimg.com/assets/p3374_p_v8_av.jpg',
+      bond: seanConnery[0]._id
+    },
+    {
+      name: 'Thunderball',
+      year_released: '1965',
+      poster:
+        'https://resizing.flixster.com/2fhYR-mWKDd4J-DGQnqXF_eh94s=/fit-in/180x240/v2/https://flxt.tmsimg.com/assets/p6355_p_v8_ah.jpg',
+      bond: seanConnery[0]._id
+    },
+    {
       name: 'GoldenEye',
       year_released: '1995',
       poster:
@@ -39,7 +53,7 @@ const main = async () => {
       name: 'Casino Royale',
       year_released: '2006',
       poster:
-        'https://a.1stdibscdn.com/archivesE/upload/1722654/f_76409031497648323143/1_org_47__master.jpg?width=1500',
+        'https://m.media-amazon.com/images/M/MV5BMDI5ZWJhOWItYTlhOC00YWNhLTlkNzctNDU5YTI1M2E1MWZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg',
       bond: danielCraig[0]._id
     },
     {

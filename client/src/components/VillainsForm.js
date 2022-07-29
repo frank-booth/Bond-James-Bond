@@ -41,7 +41,7 @@ const VillainsForm = () => {
             value={formState.name}
           />
           <label className="labels" htmlFor="movies">
-            Movies:
+            Movie(s):
           </label>
           <input
             id="movies"
