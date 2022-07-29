@@ -5,42 +5,27 @@ const Nav = () => {
     <div className="navPage">
       <div className="navButtons">
         <button className="homeButtons">
-          <Link
-            style={{ color: 'black', fontWeight: 'bold', fontSize: '18px' }}
-            to="/"
-          >
+          <Link className="links" to="/">
             Home
           </Link>
         </button>
         <button className="homeButtons">
-          <Link
-            style={{ color: 'black', fontWeight: 'bold', fontSize: '18px' }}
-            to="/bonds"
-          >
+          <Link className="links" to="/bonds">
             Bonds
           </Link>
         </button>
         <button className="homeButtons">
-          <Link
-            style={{ color: 'black', fontWeight: 'bold', fontSize: '18px' }}
-            to="/movies"
-          >
+          <Link className="links" to="/movies">
             Movies
           </Link>
         </button>
         <button className="homeButtons">
-          <Link
-            style={{ color: 'black', fontWeight: 'bold', fontSize: '18px' }}
-            to="/villains"
-          >
+          <Link className="links" to="/villains">
             Villains
           </Link>
         </button>
         <button className="homeButtons">
-          <Link
-            style={{ color: 'black', fontWeight: 'bold', fontSize: '18px' }}
-            to="add"
-          >
+          <Link className="links" to="add">
             Add a Villain
           </Link>
         </button>

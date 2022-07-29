@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react'
 
 const Home = () => {
   return (
-    <div className="homepage">
-      <img className="bondGif" src="https://i.gifer.com/KYAg.gif"></img>
+    <div>
+      <div className="homepage">
+        <img className="bondGif" src="https://i.gifer.com/KYAg.gif"></img>
+      </div>
       <div>
         <audio
           className="audioControls"

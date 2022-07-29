@@ -1,8 +1,3 @@
-.App {
-  text-align: center;
-
-  
-}
 
 .navPage {
   display: block;
@@ -14,55 +9,72 @@
 .navButtons {
   display: flex;
   justify-content: right;
-  padding-top: 30px
-}
-.bondGif {
-margin-top: 250px;
-border-radius: 100%
-}
-audio::-webkit-media-controls-enclosure {
-  background-color:#959595;
-}
-.audioControls {
-  display:flex;
-  width:10rem;
-  height: 10rem;
-
+  padding-top: 30px;
+  
 }
 
+.links {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none
+}
 
 .homeButtons {
   margin-right: 20px;
   background-color: darkgray;
   box-shadow: 5px 10px black
+}
+.homepage{
+  display:flex;
+  align-content: center;
+  flex-direction:column;
+
+}
+.bondGif {
+  margin: 200px 100px 0 100px;
 
 
+border-radius: 100%
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color:#959595;
+}
+
+.audioControls {
+  display:flex;
+  margin-left:30px;
+  width:10rem;
+  height: 10rem;
+  padding-top:80px;
 }
 
  .bondBox, .villainBox {
   display: grid;
  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-top: 50px
+  margin-top: 50px;
+  
 }
 
  .bondCard {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
   background-color: rgba(0,0,0,.5) ;
-	width: 90%;
+	width: 90%;;
 	margin: 20px auto ;
 	border-radius: 20px;
   color:white;
   border: 10px solid black;
-
-
 }
 
 .imageBox {
   height:190px;
   width: 250px;
   border-radius: 20%;
-  
-  
+
 }
 
 .movieBox {
@@ -70,11 +82,12 @@ audio::-webkit-media-controls-enclosure {
  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   margin-top: 30px
-
-
 }
 
 .movieCard {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
   background-color: rgba(0,0,0,.5) ;
 	width: 90%;
 	margin: 20px auto ;
@@ -82,34 +95,30 @@ audio::-webkit-media-controls-enclosure {
   color:white;
   border: 10px solid black;
   padding: 15px;
-
-
 }
 
 
 .posterBox {
   height: 250px;
-  width:200px;
- 
-
+  width:200px
 }
 
  .villainBox {
   display: grid;
  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  
 }
 
  .villainCard {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
   background-color: rgba(0,0,0,.5) ;
 	width: 90%;
 	margin: 20px auto ;
   border: 10px solid black;
 	border-radius: 20px;
   color:white;
-
-
 }
 
 .descriptionBox {
@@ -118,6 +127,7 @@ audio::-webkit-media-controls-enclosure {
   margin: 0 10px 0 10px;
   box-shadow: 5px 10px black
 }
+
 p {
   padding: 20px
 }
@@ -127,8 +137,8 @@ p {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
+  width:250px;
+  margin: 10px 0 10px 0;
 
 }
 
@@ -144,12 +154,12 @@ p {
   #deleteButton {
     color: white;
     background-color:#840809
-
   }
 
 .formContainer {
  margin-top: 130px;
 }
+
 form {
   background-image: url(https://media.istockphoto.com/photos/background-picture-id465101247?k=20&m=465101247&s=612x612&w=0&h=dHPuBSWDrWI2j9zsiFytVFSVVzVZxAK5p9hdjt8QS_k=);
   padding: 1em;
@@ -187,7 +197,6 @@ form input {
 textarea {
   font-size:18px;
 }
-
 
 .formButton {
 margin: 10px 0 20px 10px;
