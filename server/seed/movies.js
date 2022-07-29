@@ -37,6 +37,13 @@ const main = async () => {
       bond: seanConnery[0]._id
     },
     {
+      name: 'You Only Live Twice',
+      year_released: '1967',
+      poster:
+        'https://resizing.flixster.com/x4wCyxnpmBY5tehJJLe2DPJe7N4=/206x305/v2/https://flxt.tmsimg.com/assets/p164_p_v8_ai.jpg',
+      bond: seanConnery[0]._id
+    },
+    {
       name: 'GoldenEye',
       year_released: '1995',
       poster:
