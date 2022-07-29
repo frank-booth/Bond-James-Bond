@@ -35,6 +35,7 @@ const VillainUpdate = () => {
   return (
     <div className="formContainer">
       <form onSubmit={handleSubmit}>
+        <h2 className="formTitle">Update Villain</h2>
         <label className="labels" htmlFor="name">
           Villain Name:
         </label>

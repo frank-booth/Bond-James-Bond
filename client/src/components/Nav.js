@@ -26,7 +26,7 @@ const Nav = () => {
         </button>
         <button className="homeButtons">
           <Link className="links" to="add">
-            Add a Villain
+            Add Villain
           </Link>
         </button>
       </div>

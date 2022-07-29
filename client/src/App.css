@@ -182,6 +182,11 @@ form input {
   
 }
 
+.formTitle {
+  text-align:center;
+  font-size:36px
+}
+
 .labels {
   text-align: left;
   padding: 5px;

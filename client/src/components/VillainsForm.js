@@ -30,6 +30,7 @@ const VillainsForm = () => {
     <div>
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
+          <h2 className="formTitle">Add Villain</h2>
           <label className="labels" htmlFor="name">
             Villain Name:
           </label>
