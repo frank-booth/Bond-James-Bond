@@ -18,7 +18,7 @@ const Bonds = () => {
       <div className="bondBox">
         {bonds.map((bond) => (
           <div className="bondCard" key={bond.name}>
-            <h2> {bonds != null ? bond.name : ''}</h2>
+            <h2> {bond.name}</h2>
             <h3> {bond.years}</h3>
             <img className="imageBox" src={bond.image} />
 

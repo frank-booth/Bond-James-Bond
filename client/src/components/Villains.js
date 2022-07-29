@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import VillainUpdate from './VillainUpdate'
 
 const Villains = () => {
   let navigate = useNavigate()
@@ -36,7 +35,7 @@ const Villains = () => {
       <div className="villainBox">
         {villains.map((villain) => (
           <div className="villainCard" key={villain.name}>
-            <h1> {villains != null ? villain.name : ''}</h1>
+            <h1> {villain.name}</h1>
             <img className="imageBox" src={villain.image} />
             <h2>{villain.movies}</h2>
             <div className="descriptionBox">

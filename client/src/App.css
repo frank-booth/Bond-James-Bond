@@ -65,7 +65,7 @@ audio::-webkit-media-controls-enclosure {
   align-items:center;
   background-color: rgba(0,0,0,.5) ;
 	width: 80%;;
-	margin: 20px auto ;
+	margin: 10px auto ;
 	border-radius: 20px;
   color:white;
   border: 10px solid black;
