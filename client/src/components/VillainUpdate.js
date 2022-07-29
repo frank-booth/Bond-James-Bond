@@ -35,21 +35,27 @@ const VillainUpdate = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Villain Name:</label>
+        <label className="labels" htmlFor="name">
+          Villain Name:
+        </label>
         <input
           id="name"
           type="text"
           onChange={handleChange}
           value={formState.name}
         />
-        <label htmlFor="movies">Movies:</label>
+        <label className="labels" htmlFor="movies">
+          Movies:
+        </label>
         <input
           id="movies"
           type="text"
           onChange={handleChange}
           value={formState.movies}
         />
-        <label htmlFor="description">Description:</label>
+        <label className="labels" htmlFor="description">
+          Description:
+        </label>
         <textarea
           id="description"
           cols="30"
@@ -57,14 +63,18 @@ const VillainUpdate = () => {
           value={formState.description}
           onChange={handleChange}
         ></textarea>
-        <label htmlFor="image">Image Url:</label>
+        <label className="labels" htmlFor="image">
+          Image Url:
+        </label>
         <input
           type="text"
           id="image"
           onChange={handleChange}
           value={formState.image}
         />
-        <label htmlFor="">Choose a Bond:</label>
+        <label className="labels" htmlFor="">
+          Choose a Bond:
+        </label>
         <select id="bond" onChange={handleChange} value={formState.bond}>
           <option value="Sean Connery">Sean Connery</option>
           <option value="George Lazenby">George Lazenby</option>

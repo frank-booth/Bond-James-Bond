@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const Movies = (props) => {
   const [movies, setMovies] = useState([])
-  let navigate = useNavigate()
 
   useEffect(() => {
     const getMovies = async () => {
@@ -14,10 +12,6 @@ const Movies = (props) => {
     }
     getMovies()
   }, [])
-
-  const showMovie = (movie) => {
-    navigate(`${movie._id}`)
-  }
 
   return (
     <div>
