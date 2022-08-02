@@ -4,8 +4,6 @@ const bondController = require('../controllers/BondController.js')
 const movieController = require('../controllers/MovieController.js')
 const villainController = require('../controllers/VillainController.js')
 
-router.get('/', (req, res) => res.send('This is root!'))
-
 router.get('/bonds', bondController.getAllBonds)
 router.get('/bonds/:id', bondController.getBondById)
 
